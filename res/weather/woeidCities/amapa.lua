@@ -1,0 +1,16 @@
+locais = {}
+locais['Amapa'] = 456030
+locais['Calcoene'] = 456107
+locais['Cutias'] = 26794764
+locais['Ferreira Gomes'] = 457178
+locais['Itaubal'] = 436165
+locais['Laranjal do Jari'] = 12578163
+locais['Macapa'] = 455970
+locais['Mazagao'] = 456327
+locais['Oiapoque'] = 456369
+locais['Pedra Branca do Amapari'] = 26795208
+locais['Porto Grande'] = 457868
+locais['Pracuuba'] = 26795269
+locais['Santana'] = 12578167
+locais['Tartarugalzinho'] = 453391
+locais['Vitoria do Jari'] = 56125224

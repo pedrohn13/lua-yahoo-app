@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+		<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+			<channel>
+		
+<title>Yahoo! Weather - Rio de Janeiro, BR</title>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/Rio_de_Janeiro__BR/*http://weather.yahoo.com/forecast/BRXX0201_c.html</link>
+<description>Yahoo! Weather for Rio de Janeiro, BR</description>
+<language>en-us</language>
+<lastBuildDate>Tue, 28 Aug 2012 11:01 pm LST</lastBuildDate>
+<ttl>60</ttl>
+<yweather:location city="Rio de Janeiro" region="RJ"   country="Brazil"/>
+<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>
+<yweather:wind chill="20"   direction="290"   speed="9.66" />
+<yweather:atmosphere humidity="88"  visibility="6"  pressure="1015.92"  rising="2" />
+<yweather:astronomy sunrise="6:05 am"   sunset="5:41 pm"/>
+<image>
+<title>Yahoo! Weather</title>
+<width>142</width>
+<height>18</height>
+<link>http://weather.yahoo.com</link>
+<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>
+</image>
+<item>
+<title>Conditions for Rio de Janeiro, BR at 11:01 pm LST</title>
+<geo:lat>-22.98</geo:lat>
+<geo:long>-43.2</geo:long>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/Rio_de_Janeiro__BR/*http://weather.yahoo.com/forecast/BRXX0201_c.html</link>
+<pubDate>Tue, 28 Aug 2012 11:01 pm LST</pubDate>
+<yweather:condition  text="Light Drizzle"  code="9"  temp="20"  date="Tue, 28 Aug 2012 11:01 pm LST" />
+<description><![CDATA[
+<img src="http://l.yimg.com/a/i/us/we/52/9.gif"/><br />
+<b>Current Conditions:</b><br />
+Light Drizzle, 20 C<BR />
+<BR /><b>Forecast:</b><BR />
+Tue - Showers. High: 24 Low: 19<br />
+Wed - Scattered Thunderstorms. High: 24 Low: 18<br />
+<br />
+<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Rio_de_Janeiro__BR/*http://weather.yahoo.com/forecast/BRXX0201_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>
+(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>
+]]></description>
+<yweather:forecast day="Tue" date="28 Aug 2012" low="19" high="24" text="Showers" code="11" />
+<yweather:forecast day="Wed" date="29 Aug 2012" low="18" high="24" text="Scattered Thunderstorms" code="38" />
+<guid isPermaLink="false">BRXX0201_2012_08_29_7_00_LST</guid>
+</item>
+</channel>
+</rss>
+
+<!-- api9.weather.ac4.yahoo.com Wed Aug 29 02:24:02 PST 2012 -->

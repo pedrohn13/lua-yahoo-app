@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="../luadoc.css" type="text/css" />
+	<!--meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/-->
+</head>
+
+<body>
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+<div id="main">
+
+<div id="navigation">
+
+
+<h1>LuaDoc</h1>
+<ul>
+	
+	<li><a href="../index.html">Index</a></li>
+	
+</ul>
+
+
+<!-- Module list -->
+
+<h1>Modules</h1>
+<ul>
+
+	<li>
+		<a href="../modules/xml.html">xml</a>
+	</li>
+
+</ul>
+
+
+
+<!-- File list -->
+
+<h1>Files</h1>
+<ul>
+
+	<li>
+		<a href="../files/Category.html">Category.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/Languages.html">Languages.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/News.html">News.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/Tempo.html">Tempo.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/Textview.html">Textview.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/html.html">html.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/init.html">init.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/main.html">main.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/mainFinance.html">mainFinance.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/mainNews.html">mainNews.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/mainPortal.html">mainPortal.lua</a>
+	</li>
+
+	<li><strong>mainWeather.lua</strong></li>
+	
+	<li>
+		<a href="../files/parserCSV.html">parserCSV.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/stock.html">stock.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/translateDate.html">translateDate.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/utils.html">utils.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/xml.html">xml.lua</a>
+	</li>
+
+</ul>
+
+
+
+
+
+
+</div> <!-- id="navigation" -->
+
+<div id="content">
+
+<h1>File <code>mainWeather.lua</code></h1>
+
+
+
+
+
+
+
+<h2>Functions</h2>
+<table class="function_list">
+
+	<tr>
+	<td class="name" nowrap><a href="#barCity">barCity</a>&nbsp;()</td>
+	<td class="summary">Shows the favorites widget </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#barCity2">barCity2</a>&nbsp;()</td>
+	<td class="summary">Shows the favorites widget (more details) </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#findName">findName</a>&nbsp;(letter, table)</td>
+	<td class="summary">Search a name that starts with some letter </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#forget">forget</a>&nbsp;()</td>
+	<td class="summary">Remove selected city from favorites </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#handlerW">handlerW</a>&nbsp;(evt)</td>
+	<td class="summary">Captures events </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#loadCities">loadCities</a>&nbsp;()</td>
+	<td class="summary">Loads cities of a region </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#loadFavorites">loadFavorites</a>&nbsp;()</td>
+	<td class="summary">Loads favorites cities and store in favorites table </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#moveSelDown">moveSelDown</a>&nbsp;()</td>
+	<td class="summary">Move cursor down according the current screen </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#moveSelLeft">moveSelLeft</a>&nbsp;()</td>
+	<td class="summary">Move cursor left </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#moveSelRight">moveSelRight</a>&nbsp;()</td>
+	<td class="summary">Move cursor right </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#moveSelUp">moveSelUp</a>&nbsp;()</td>
+	<td class="summary">Move cursor up  according the current screen </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#paintCities">paintCities</a>&nbsp;()</td>
+	<td class="summary">Shows the list of cities from the selected region </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#paintControls">paintControls</a>&nbsp;()</td>
+	<td class="summary">Show the current screen icons and text controls </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#paintRegions">paintRegions</a>&nbsp;()</td>
+	<td class="summary">Shows the list of regions </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#paintScreen1">paintScreen1</a>&nbsp;()</td>
+	<td class="summary">Shows the screen with weather forecasts and favorites </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#paintScreen2">paintScreen2</a>&nbsp;()</td>
+	<td class="summary">Shows the screen to add new cities to favorites </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#registerWeather">registerWeather</a>&nbsp;()</td>
+	<td class="summary">Starts application </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#save">save</a>&nbsp;()</td>
+	<td class="summary">Save selected city to favorites </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#search">search</a>&nbsp;(table, obj)</td>
+	<td class="summary">Search an object in a table </td>
+	</tr>
+
+</table>
+
+
+
+
+
+
+<br/>
+<br/>
+
+
+
+
+<h2><a name="functions"></a>Functions</h2>
+<dl class="function">
+
+
+
+<dt><a name="barCity"></a><strong>barCity</strong>&nbsp;()</dt>
+<dd>
+Shows the favorites widget
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="barCity2"></a><strong>barCity2</strong>&nbsp;()</dt>
+<dd>
+Shows the favorites widget (more details)
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="findName"></a><strong>findName</strong>&nbsp;(letter, table)</dt>
+<dd>
+Search a name that starts with some letter
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  letter: and table to search
+	</li>
+	
+	<li>
+	  table: 
+	</li>
+	
+</ul>
+
+
+
+
+
+
+<h3>Return value:</h3>
+index of first word with the letter
+
+
+
+</dd>
+
+
+
+
+<dt><a name="forget"></a><strong>forget</strong>&nbsp;()</dt>
+<dd>
+Remove selected city from favorites
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="handlerW"></a><strong>handlerW</strong>&nbsp;(evt)</dt>
+<dd>
+Captures events
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  evt: 
+	</li>
+	
+</ul>
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="loadCities"></a><strong>loadCities</strong>&nbsp;()</dt>
+<dd>
+Loads cities of a region
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="loadFavorites"></a><strong>loadFavorites</strong>&nbsp;()</dt>
+<dd>
+Loads favorites cities and store in favorites table
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="moveSelDown"></a><strong>moveSelDown</strong>&nbsp;()</dt>
+<dd>
+Move cursor down according the current screen
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="moveSelLeft"></a><strong>moveSelLeft</strong>&nbsp;()</dt>
+<dd>
+Move cursor left
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="moveSelRight"></a><strong>moveSelRight</strong>&nbsp;()</dt>
+<dd>
+Move cursor right
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="moveSelUp"></a><strong>moveSelUp</strong>&nbsp;()</dt>
+<dd>
+Move cursor up  according the current screen
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="paintCities"></a><strong>paintCities</strong>&nbsp;()</dt>
+<dd>
+Shows the list of cities from the selected region
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="paintControls"></a><strong>paintControls</strong>&nbsp;()</dt>
+<dd>
+Show the current screen icons and text controls
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="paintRegions"></a><strong>paintRegions</strong>&nbsp;()</dt>
+<dd>
+Shows the list of regions
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="paintScreen1"></a><strong>paintScreen1</strong>&nbsp;()</dt>
+<dd>
+Shows the screen with weather forecasts and favorites
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="paintScreen2"></a><strong>paintScreen2</strong>&nbsp;()</dt>
+<dd>
+Shows the screen to add new cities to favorites
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="registerWeather"></a><strong>registerWeather</strong>&nbsp;()</dt>
+<dd>
+Starts application
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="save"></a><strong>save</strong>&nbsp;()</dt>
+<dd>
+Save selected city to favorites
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="search"></a><strong>search</strong>&nbsp;(table, obj)</dt>
+<dd>
+Search an object in a table
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  table: and object
+	</li>
+	
+	<li>
+	  obj: 
+	</li>
+	
+</ul>
+
+
+
+
+
+
+<h3>Return value:</h3>
+true or false
+
+
+
+</dd>
+
+
+</dl>
+
+
+
+
+
+
+
+</div> <!-- id="content" -->
+
+</div> <!-- id="main" -->
+
+<div id="about">
+	<p><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31" width="88" /></a></p>
+</div> <!-- id="about" -->
+
+</div> <!-- id="container" -->	
+</body>
+</html>

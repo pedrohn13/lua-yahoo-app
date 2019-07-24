@@ -1,0 +1,7 @@
+Text:
+ en - Follow the news and weather of the Yahoo portal on your TV.
+ 
+ pt - Acompanhe as principais notícias e informações de clima do Portal Yahoo em sua TV. 
+
+Last update: 14/11/2012
+Version: 1.0

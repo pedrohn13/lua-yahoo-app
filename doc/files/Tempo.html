@@ -1,0 +1,1242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="../luadoc.css" type="text/css" />
+	<!--meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/-->
+</head>
+
+<body>
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+<div id="main">
+
+<div id="navigation">
+
+
+<h1>LuaDoc</h1>
+<ul>
+	
+	<li><a href="../index.html">Index</a></li>
+	
+</ul>
+
+
+<!-- Module list -->
+
+<h1>Modules</h1>
+<ul>
+
+	<li>
+		<a href="../modules/xml.html">xml</a>
+	</li>
+
+</ul>
+
+
+
+<!-- File list -->
+
+<h1>Files</h1>
+<ul>
+
+	<li>
+		<a href="../files/Category.html">Category.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/Languages.html">Languages.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/News.html">News.lua</a>
+	</li>
+
+	<li><strong>Tempo.lua</strong></li>
+	
+	<li>
+		<a href="../files/Textview.html">Textview.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/html.html">html.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/init.html">init.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/main.html">main.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/mainFinance.html">mainFinance.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/mainNews.html">mainNews.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/mainPortal.html">mainPortal.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/mainWeather.html">mainWeather.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/parserCSV.html">parserCSV.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/stock.html">stock.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/translateDate.html">translateDate.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/utils.html">utils.lua</a>
+	</li>
+
+	<li>
+		<a href="../files/xml.html">xml.lua</a>
+	</li>
+
+</ul>
+
+
+
+
+
+
+</div> <!-- id="navigation" -->
+
+<div id="content">
+
+<h1>File <code>Tempo.lua</code></h1>
+
+
+
+
+
+
+
+<h2>Functions</h2>
+<table class="function_list">
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:equals">Clima:equals</a>&nbsp;(clima2)</td>
+	<td class="summary">compare if two Clima are equals </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:getCidade">Clima:getCidade</a>&nbsp;()</td>
+	<td class="summary">get city name </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:getCondicaoClimatica">Clima:getCondicaoClimatica</a>&nbsp;()</td>
+	<td class="summary">get current weather condition </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:getData">Clima:getData</a>&nbsp;()</td>
+	<td class="summary">get date </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:getDirVento">Clima:getDirVento</a>&nbsp;()</td>
+	<td class="summary">get wind direction </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:getEstado">Clima:getEstado</a>&nbsp;()</td>
+	<td class="summary">get region name </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:getNascerDoSol">Clima:getNascerDoSol</a>&nbsp;()</td>
+	<td class="summary">get hours sunrise </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:getPais">Clima:getPais</a>&nbsp;()</td>
+	<td class="summary">get country name </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:getPorDoSol">Clima:getPorDoSol</a>&nbsp;()</td>
+	<td class="summary">get hours sunset </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:getPressao">Clima:getPressao</a>&nbsp;()</td>
+	<td class="summary">get pressure </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:getPrevisaoDeAmanha">Clima:getPrevisaoDeAmanha</a>&nbsp;()</td>
+	<td class="summary">get tomorrow weather forecast </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:getPrevisaoDeHoje">Clima:getPrevisaoDeHoje</a>&nbsp;()</td>
+	<td class="summary">get tomorrow weather forecast </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:getRise">Clima:getRise</a>&nbsp;()</td>
+	<td class="summary">get hours sunset </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:getSensacaoTermica">Clima:getSensacaoTermica</a>&nbsp;()</td>
+	<td class="summary">get chill </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:getTemperatura">Clima:getTemperatura</a>&nbsp;()</td>
+	<td class="summary">get current temperature </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:getUmidadeDoAr">Clima:getUmidadeDoAr</a>&nbsp;()</td>
+	<td class="summary">get humidity </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:getUnidades">Clima:getUnidades</a>&nbsp;()</td>
+	<td class="summary">get table with units symbols </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:getVelVento">Clima:getVelVento</a>&nbsp;()</td>
+	<td class="summary">get wind speed </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:getVisibilidade">Clima:getVisibilidade</a>&nbsp;()</td>
+	<td class="summary">get visibility </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:getWoeid">Clima:getWoeid</a>&nbsp;()</td>
+	<td class="summary">get Woeid code </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:new">Clima:new</a>&nbsp;(cod)</td>
+	<td class="summary">constructor </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:paintInfo">Clima:paintInfo</a>&nbsp;()</td>
+	<td class="summary">Show weather forecast detailed </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:paintMini">Clima:paintMini</a>&nbsp;(x, y)</td>
+	<td class="summary">Shows weather mini forecast </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#Clima:paintMoreInfo">Clima:paintMoreInfo</a>&nbsp;()</td>
+	<td class="summary">Show more details </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#astronomia">astronomia</a>&nbsp;(parsedXml)</td>
+	<td class="summary">get the astronomy information from a xml page </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#atmosfera">atmosfera</a>&nbsp;(parsedXml)</td>
+	<td class="summary">get the atmosphere information from a xml page </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#centralize">centralize</a>&nbsp;(string, width)</td>
+	<td class="summary">centralize string in a frame </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#condicoesClimaticas">condicoesClimaticas</a>&nbsp;(parsedXml)</td>
+	<td class="summary">get the weather condition from a xml page </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#data">data</a>&nbsp;(parsedXml)</td>
+	<td class="summary">get the date from a xml page </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#direcaoVento">direcaoVento</a>&nbsp;(string, angle)</td>
+	<td class="summary">get the wind  direction according the angle degree </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#getCondic">getCondic</a>&nbsp;(num)</td>
+	<td class="summary">get the weather condition text, icon and background image according to a number passed as parameter </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#localizacao">localizacao</a>&nbsp;(parsedXml)</td>
+	<td class="summary">get the location from a xml page </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#previsaoParaAmanha">previsaoParaAmanha</a>&nbsp;(parsedXml)</td>
+	<td class="summary">get the weather forecast for tomorrow from a xml page </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#previsaoParaHoje">previsaoParaHoje</a>&nbsp;(parsedXml)</td>
+	<td class="summary">get the weather forecast for the rest of the day from a xml page </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#traduzData">traduzData</a>&nbsp;(data, date)</td>
+	<td class="summary">translate date to brazilian format </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#unidades">unidades</a>&nbsp;(parsedXml)</td>
+	<td class="summary">get the unit symbols from a xml page </td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#vento">vento</a>&nbsp;(parsedXml)</td>
+	<td class="summary">get the wind information from a xml page </td>
+	</tr>
+
+</table>
+
+
+
+
+
+
+<br/>
+<br/>
+
+
+
+
+<h2><a name="functions"></a>Functions</h2>
+<dl class="function">
+
+
+
+<dt><a name="Clima:equals"></a><strong>Clima:equals</strong>&nbsp;(clima2)</dt>
+<dd>
+compare if two Clima are equals
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  clima2: 
+	</li>
+	
+</ul>
+
+
+
+
+
+
+<h3>Return value:</h3>
+boolean
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:getCidade"></a><strong>Clima:getCidade</strong>&nbsp;()</dt>
+<dd>
+get city name
+
+
+
+
+
+
+
+<h3>Return value:</h3>
+string
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:getCondicaoClimatica"></a><strong>Clima:getCondicaoClimatica</strong>&nbsp;()</dt>
+<dd>
+get current weather condition
+
+
+
+
+
+
+
+<h3>Return value:</h3>
+table
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:getData"></a><strong>Clima:getData</strong>&nbsp;()</dt>
+<dd>
+get date
+
+
+
+
+
+
+
+<h3>Return value:</h3>
+string
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:getDirVento"></a><strong>Clima:getDirVento</strong>&nbsp;()</dt>
+<dd>
+get wind direction
+
+
+
+
+
+
+
+<h3>Return value:</h3>
+string
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:getEstado"></a><strong>Clima:getEstado</strong>&nbsp;()</dt>
+<dd>
+get region name
+
+
+
+
+
+
+
+<h3>Return value:</h3>
+string
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:getNascerDoSol"></a><strong>Clima:getNascerDoSol</strong>&nbsp;()</dt>
+<dd>
+get hours sunrise
+
+
+
+
+
+
+
+<h3>Return value:</h3>
+string
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:getPais"></a><strong>Clima:getPais</strong>&nbsp;()</dt>
+<dd>
+get country name
+
+
+
+
+
+
+
+<h3>Return value:</h3>
+string
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:getPorDoSol"></a><strong>Clima:getPorDoSol</strong>&nbsp;()</dt>
+<dd>
+get hours sunset
+
+
+
+
+
+
+
+<h3>Return value:</h3>
+string
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:getPressao"></a><strong>Clima:getPressao</strong>&nbsp;()</dt>
+<dd>
+get pressure
+
+
+
+
+
+
+
+<h3>Return value:</h3>
+string
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:getPrevisaoDeAmanha"></a><strong>Clima:getPrevisaoDeAmanha</strong>&nbsp;()</dt>
+<dd>
+get tomorrow weather forecast
+
+
+
+
+
+
+
+<h3>Return value:</h3>
+table
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:getPrevisaoDeHoje"></a><strong>Clima:getPrevisaoDeHoje</strong>&nbsp;()</dt>
+<dd>
+get tomorrow weather forecast
+
+
+
+
+
+
+
+<h3>Return value:</h3>
+table
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:getRise"></a><strong>Clima:getRise</strong>&nbsp;()</dt>
+<dd>
+get hours sunset
+
+
+
+
+
+
+
+<h3>Return value:</h3>
+string
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:getSensacaoTermica"></a><strong>Clima:getSensacaoTermica</strong>&nbsp;()</dt>
+<dd>
+get chill
+
+
+
+
+
+
+
+<h3>Return value:</h3>
+string
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:getTemperatura"></a><strong>Clima:getTemperatura</strong>&nbsp;()</dt>
+<dd>
+get current temperature
+
+
+
+
+
+
+
+<h3>Return value:</h3>
+string
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:getUmidadeDoAr"></a><strong>Clima:getUmidadeDoAr</strong>&nbsp;()</dt>
+<dd>
+get humidity
+
+
+
+
+
+
+
+<h3>Return value:</h3>
+string
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:getUnidades"></a><strong>Clima:getUnidades</strong>&nbsp;()</dt>
+<dd>
+get table with units symbols
+
+
+
+
+
+
+
+<h3>Return value:</h3>
+table
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:getVelVento"></a><strong>Clima:getVelVento</strong>&nbsp;()</dt>
+<dd>
+get wind speed
+
+
+
+
+
+
+
+<h3>Return value:</h3>
+string
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:getVisibilidade"></a><strong>Clima:getVisibilidade</strong>&nbsp;()</dt>
+<dd>
+get visibility
+
+
+
+
+
+
+
+<h3>Return value:</h3>
+string
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:getWoeid"></a><strong>Clima:getWoeid</strong>&nbsp;()</dt>
+<dd>
+get Woeid code
+
+
+
+
+
+
+
+<h3>Return value:</h3>
+string
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:new"></a><strong>Clima:new</strong>&nbsp;(cod)</dt>
+<dd>
+constructor
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  cod: 
+	</li>
+	
+</ul>
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:paintInfo"></a><strong>Clima:paintInfo</strong>&nbsp;()</dt>
+<dd>
+Show weather forecast detailed
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:paintMini"></a><strong>Clima:paintMini</strong>&nbsp;(x, y)</dt>
+<dd>
+Shows weather mini forecast
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  x: 
+	</li>
+	
+	<li>
+	  y: 
+	</li>
+	
+</ul>
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="Clima:paintMoreInfo"></a><strong>Clima:paintMoreInfo</strong>&nbsp;()</dt>
+<dd>
+Show more details
+
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="astronomia"></a><strong>astronomia</strong>&nbsp;(parsedXml)</dt>
+<dd>
+get the astronomy information from a xml page
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  parsedXml: 
+	</li>
+	
+</ul>
+
+
+
+
+
+
+<h3>Return value:</h3>
+hours of sunrise and sunset
+
+
+
+</dd>
+
+
+
+
+<dt><a name="atmosfera"></a><strong>atmosfera</strong>&nbsp;(parsedXml)</dt>
+<dd>
+get the atmosphere information from a xml page
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  parsedXml: 
+	</li>
+	
+</ul>
+
+
+
+
+
+
+<h3>Return value:</h3>
+humidity, visibility, pressure and pressure rise
+
+
+
+</dd>
+
+
+
+
+<dt><a name="centralize"></a><strong>centralize</strong>&nbsp;(string, width)</dt>
+<dd>
+centralize string in a frame
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  string: and frame width
+	</li>
+	
+	<li>
+	  width: 
+	</li>
+	
+</ul>
+
+
+
+
+
+
+<h3>Return value:</h3>
+x position to draw the text
+
+
+
+</dd>
+
+
+
+
+<dt><a name="condicoesClimaticas"></a><strong>condicoesClimaticas</strong>&nbsp;(parsedXml)</dt>
+<dd>
+get the weather condition from a xml page
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  parsedXml: 
+	</li>
+	
+</ul>
+
+
+
+
+
+
+<h3>Return value:</h3>
+table with weather condition midias(text,icon and background) and current temperature
+
+
+
+</dd>
+
+
+
+
+<dt><a name="data"></a><strong>data</strong>&nbsp;(parsedXml)</dt>
+<dd>
+get the date from a xml page
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  parsedXml: 
+	</li>
+	
+</ul>
+
+
+
+
+
+
+<h3>Return value:</h3>
+date
+
+
+
+</dd>
+
+
+
+
+<dt><a name="direcaoVento"></a><strong>direcaoVento</strong>&nbsp;(string, angle)</dt>
+<dd>
+get the wind  direction according the angle degree
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  string: 
+	</li>
+	
+	<li>
+	  angle: degree
+	</li>
+	
+</ul>
+
+
+
+
+
+
+<h3>Return value:</h3>
+direction string
+
+
+
+</dd>
+
+
+
+
+<dt><a name="getCondic"></a><strong>getCondic</strong>&nbsp;(num)</dt>
+<dd>
+get the weather condition text, icon and background image according to a number passed as parameter
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  num: 
+	</li>
+	
+</ul>
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="localizacao"></a><strong>localizacao</strong>&nbsp;(parsedXml)</dt>
+<dd>
+get the location from a xml page
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  parsedXml: 
+	</li>
+	
+</ul>
+
+
+
+
+
+
+<h3>Return value:</h3>
+city, region and country
+
+
+
+</dd>
+
+
+
+
+<dt><a name="previsaoParaAmanha"></a><strong>previsaoParaAmanha</strong>&nbsp;(parsedXml)</dt>
+<dd>
+get the weather forecast for tomorrow from a xml page
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  parsedXml: 
+	</li>
+	
+</ul>
+
+
+
+
+
+
+<h3>Return value:</h3>
+table with weather condition, minimum and maximum temperature
+
+
+
+</dd>
+
+
+
+
+<dt><a name="previsaoParaHoje"></a><strong>previsaoParaHoje</strong>&nbsp;(parsedXml)</dt>
+<dd>
+get the weather forecast for the rest of the day from a xml page
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  parsedXml: 
+	</li>
+	
+</ul>
+
+
+
+
+
+
+<h3>Return value:</h3>
+table with weather condition, minimum and maximum temperature
+
+
+
+</dd>
+
+
+
+
+<dt><a name="traduzData"></a><strong>traduzData</strong>&nbsp;(data, date)</dt>
+<dd>
+translate date to brazilian format
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  data: 
+	</li>
+	
+	<li>
+	  date: in american format
+	</li>
+	
+</ul>
+
+
+
+
+
+
+<h3>Return value:</h3>
+date in brazilian format
+
+
+
+</dd>
+
+
+
+
+<dt><a name="unidades"></a><strong>unidades</strong>&nbsp;(parsedXml)</dt>
+<dd>
+get the unit symbols from a xml page
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  parsedXml: 
+	</li>
+	
+</ul>
+
+
+
+
+
+
+<h3>Return value:</h3>
+table with temperature unit, distance unit, speed unit and pressure unit
+
+
+
+</dd>
+
+
+
+
+<dt><a name="vento"></a><strong>vento</strong>&nbsp;(parsedXml)</dt>
+<dd>
+get the wind information from a xml page
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  parsedXml: 
+	</li>
+	
+</ul>
+
+
+
+
+
+
+<h3>Return value:</h3>
+chill, direction and speed
+
+
+
+</dd>
+
+
+</dl>
+
+
+
+
+
+
+
+</div> <!-- id="content" -->
+
+</div> <!-- id="main" -->
+
+<div id="about">
+	<p><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31" width="88" /></a></p>
+</div> <!-- id="about" -->
+
+</div> <!-- id="container" -->	
+</body>
+</html>

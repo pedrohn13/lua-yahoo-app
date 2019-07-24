@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+		<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+			<channel>
+		
+<title>Yahoo! Weather - Brasilia, BR</title>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/Brasilia__BR/*http://weather.yahoo.com/forecast/BRXX0043_c.html</link>
+<description>Yahoo! Weather for Brasilia, BR</description>
+<language>en-us</language>
+<lastBuildDate>Tue, 28 Aug 2012 11:01 pm LST</lastBuildDate>
+<ttl>60</ttl>
+<yweather:location city="Brasilia" region="DF"   country="Brazil"/>
+<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>
+<yweather:wind chill="22"   direction="0"   speed="0" />
+<yweather:atmosphere humidity="38"  visibility="9.99"  pressure="1015.92"  rising="0" />
+<yweather:astronomy sunrise="6:20 am"   sunset="6:04 pm"/>
+<image>
+<title>Yahoo! Weather</title>
+<width>142</width>
+<height>18</height>
+<link>http://weather.yahoo.com</link>
+<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>
+</image>
+<item>
+<title>Conditions for Brasilia, BR at 11:01 pm LST</title>
+<geo:lat>-15.78</geo:lat>
+<geo:long>-47.93</geo:long>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/Brasilia__BR/*http://weather.yahoo.com/forecast/BRXX0043_c.html</link>
+<pubDate>Tue, 28 Aug 2012 11:01 pm LST</pubDate>
+<yweather:condition  text="Fair"  code="33"  temp="22"  date="Tue, 28 Aug 2012 11:01 pm LST" />
+<description><![CDATA[
+<img src="http://l.yimg.com/a/i/us/we/52/33.gif"/><br />
+<b>Current Conditions:</b><br />
+Fair, 22 C<BR />
+<BR /><b>Forecast:</b><BR />
+Tue - Partly Cloudy. High: 28 Low: 17<br />
+Wed - Partly Cloudy. High: 31 Low: 15<br />
+<br />
+<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Brasilia__BR/*http://weather.yahoo.com/forecast/BRXX0043_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>
+(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>
+]]></description>
+<yweather:forecast day="Tue" date="28 Aug 2012" low="17" high="28" text="Partly Cloudy" code="29" />
+<yweather:forecast day="Wed" date="29 Aug 2012" low="15" high="31" text="Partly Cloudy" code="30" />
+<guid isPermaLink="false">BRXX0043_2012_08_29_7_00_LST</guid>
+</item>
+</channel>
+</rss>
+
+<!-- api12.weather.ac4.yahoo.com Wed Aug 29 02:24:01 PST 2012 -->
